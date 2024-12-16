@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replay Gaming Store | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+<!--cart items details-->
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tbody id="cart-items">
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/razer-laptop.png" width="100"/>
+                    <div>New Razer Blade 14</div>
+                    <div>Price: $2399.99</div>
+                    <a class="remove" href="cart.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 2399.99)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/air.png" width="100"/>
+                    <div>MSI Titan 18 hx</div>
+                    <div>Price: $5000.00</div>
+                    <a class="remove" href="cart1.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 5000.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/LegionLaptop.avif" width="100"/>
+                    <div>Lenovo Legion 5 Pro</div>
+                    <div>Price: $1799.00</div>
+                    <a class="remove" href="cart2.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 21799.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/blazer.png" width="100"/>
+                    <div>Asus ROG 9 Pro</div>
+                    <div>Price: $745.00</div>
+                    <a class="remove" href="cart3.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 745.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/onePlus.png" width="100"/>
+                    <div>OnePlus 12R</div>
+                    <div>Price: $493.00</div>
+                    <a class="remove" href="cart4.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 493.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/SamsungUltra.webp" width="100"/>
+                    <div>Samsung Galaxy S24 Ultra</div>
+                    <div>Price: $899.99</div>
+                    <a class="remove" href="cart5.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 899.99)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/crater2.png" width="100"/>
+                    <div>CyberPowerPC Gamer Supreme Gaming Desktop</div>
+                    <div>Price: $1599.99</div>
+                    <a class="remove" href="cart6.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 1599.99)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/crater.png" width="100"/>
+                    <div>Asus ROG STRIX GA35</div>
+                    <div>Price: $1579.00</div>
+                    <a class="remove" href="cart7.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 1579.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/pcAcer.png" width="100"/>
+                    <div>Acer Predator Orion</div>
+                    <div>Price: $1449.00</div>
+                    <a class="remove" href="cart8.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 1449.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/jordan.png" width="100"/>
+                    <div>Sony PlayStation 5</div>
+                    <div>Price: $599.00</div>
+                    <a class="remove" href="cart9.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 599.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/nintendoSwitch.webp" width="100"/>
+                    <div>Nintendo Switch</div>
+                    <div>Price: $294.50</div>
+                    <a class="remove" href="cart10.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 294.50)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/applyVision.png" width="100"/>
+                    <div>Apple Vision Pro</div>
+                    <div>Price: $3499.00</div>
+                    <a class="remove" href="cart11.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 3499.00)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/RazerKeyboard.png" width="100"/>
+                    <div>RAZER Blackwidow V3 TKL</div>
+                    <div>Price: $99.99</div>
+                    <a class="remove" href="cart12.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 99.99)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/tufKeyboard.png" width="100"/>
+                    <div>ASUS TUF Gaming K1</div>
+                    <div>Price: $39.99</div>
+                    <a class="remove" href="cart13.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 39.99)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td>
+                   <div>
+                    <img alt="PC 1" height="100" src="img/logitech.png" width="100"/>
+                    <div>LOGITECH G515</div>
+                    <div>Price: $118.99</div>
+                    <a class="remove" href="cart14.html" onclick="removeItem(this)">Remove</a>
+                </td>
+            </div> 
+                <td>
+                    <input min="0" type="number" value="0" onchange="updateSubtotal(this, 118.99)"/>
+                </td>
+                <td class="subtotal">0.00</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+    <div class="total-price">
+
+        <table>
+            <tr>
+                <td><strong>Subtotal</strong></td>
+                <td id="subtotal">0.00</td>
+            </tr>
+            <tr>
+                <td><strong>Tax</strong></td>
+                <td id="tax"></td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <div class="total"><td id="total"></td></div>
+            </tr>
+        </table>
+
+    </div>
+
+     <div class="buttons">
+        <button class="productButton">Check out</button>
+        </div>
+        <div class="paymintz">
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button onclick="checkOut()" class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+        </div>
+    </div>
+    <script>
+        
+         function updateSubtotal(element, price) {
+            const row = element.closest('tr');
+            const quantity = element.value;
+            const subtotal = price * quantity;
+            row.querySelector('.subtotal').innerText = `$${subtotal.toFixed(2)}`;
+            updateTotals();
+        }
+
+        
+
+        function updateTotals() {
+            const subtotals = document.querySelectorAll('.subtotal');
+            let subtotal = 0;
+            subtotals.forEach(item => {
+                subtotal += parseFloat(item.innerText.replace('$', ''));
+            });
+            const tax = subtotal * 0.05;
+            const total = subtotal + tax;
+            document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`;
+            document.getElementById('tax').innerText = `$${tax.toFixed(2)}`;
+            document.getElementById('total').innerText = `$${total.toFixed(2)}`;
+        }
+
+        function checkOut() {
+            alert('Proceeding to checkout...');
+        }
+
+        const productButton = document.querySelector(".productButton");
+        const payment = document.querySelector(".payment");
+        const close = document.querySelector(".close");
+
+        productButton.addEventListener("click", () => {
+        payment.style.display = "flex";
+        });
+
+        close.addEventListener("click", () => {
+        payment.style.display = "none";
+        });
+
+        
+    </script>
+
+</div>
+
+<!-------Footer------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download our app!!</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo.png">
+                    <p>Download our app!!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Whats App</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Webdev E-commerce Project by Group #</p>
+        </div>
+    </div>
+<!--js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+</body>
+</html>
